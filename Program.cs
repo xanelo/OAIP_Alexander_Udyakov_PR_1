@@ -5,11 +5,22 @@ namespace Labi
     {
 
         static void Main(string[] args) {
-            iPad sorry = new iPad();
+
+            Console.WriteLine("Using polymorphism:");
+            Console.WriteLine();
+
+            Apple sorry = new iPad();
             sorry.CreationYear();
             sorry.Designer();
-            sorry.Years_since_creation();
-            sorry.Revenue_for_2025();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("Using concealment:");
+            Console.WriteLine();
+
+            iPad adv_hidd = new iPad();
+            adv_hidd.Years_since_creation();
+            adv_hidd.Revenue_for_2025();
         }
 
     }
